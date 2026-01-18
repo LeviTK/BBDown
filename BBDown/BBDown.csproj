@@ -9,6 +9,7 @@
     <PackageProjectUrl>https://github.com/nilaoda/BBDown</PackageProjectUrl>
     <StartupObject></StartupObject>
     <PackAsTool>true</PackAsTool>
+    <IsPackable>true</IsPackable>
     <ToolCommandName>BBDown</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <Nullable>enable</Nullable>

@@ -15,7 +15,7 @@
 
 ## 环境要求
 
-本软件需要 .NET 9.0 运行时环境。
+本软件需要 .NET 10.0 运行时环境。
 
 ### macOS (Apple Silicon / Intel)
 ```bash
@@ -27,12 +27,12 @@ brew install --cask dotnet
 ```
 
 ### Windows
-从 [.NET 官网](https://dotnet.microsoft.com/download/dotnet/9.0) 下载安装 .NET 9.0 SDK 或运行时。
+从 [.NET 官网](https://dotnet.microsoft.com/download/dotnet/10.0) 下载安装 .NET 10.0 SDK 或运行时。
 
 ### Linux
 ```bash
 # Ubuntu/Debian
-sudo apt-get update && sudo apt-get install -y dotnet-sdk-9.0
+sudo apt-get update && sudo apt-get install -y dotnet-sdk-10.0
 
 # 或使用 snap
 sudo snap install dotnet-sdk --classic

@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS builder
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS builder
 
 WORKDIR /app
 
@@ -6,11 +6,11 @@ COPY . .
 
 RUN dotnet build -c Release
 
-FROM mcr.microsoft.com/dotnet/aspnet:9.0
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
 
 WORKDIR /app
 
-COPY --from=builder /app/BBDown/bin/Release/net9.0 .
+COPY --from=builder /app/BBDown/bin/Release/net10.0 .
 
 EXPOSE 23333
 

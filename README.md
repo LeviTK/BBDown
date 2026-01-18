@@ -13,60 +13,29 @@
 
 # 快速开始
 
-## 环境要求
+## Homebrew 安装 (macOS)
 
-本软件需要 .NET 10.0 运行时环境。
-
-### macOS (Apple Silicon / Intel)
 ```bash
-# 安装 .NET SDK (推荐)
-brew install --cask dotnet-sdk
+# 添加 Tap
+brew tap LeviTK/tap
 
-# 或仅安装运行时
-brew install --cask dotnet
+# 安装 BBDown（会自动安装 .NET 10 运行时）
+brew install LeviTK/tap/bbdown
+
+# 安装 FFmpeg（视频混流必需）
+brew install ffmpeg
 ```
+
+## 其他平台
 
 ### Windows
-从 [.NET 官网](https://dotnet.microsoft.com/download/dotnet/10.0) 下载安装 .NET 10.0 SDK 或运行时。
+从 [Release 页面](https://github.com/LeviTK/BBDown/releases) 下载对应版本。
 
 ### Linux
-```bash
-# Ubuntu/Debian
-sudo apt-get update && sudo apt-get install -y dotnet-sdk-10.0
-
-# 或使用 snap
-sudo snap install dotnet-sdk --classic
-```
-
-## 安装 BBDown
-
-本软件已经以 [Dotnet Tool](https://www.nuget.org/packages/BBDown/) 形式发布  
-
-如果你本地有dotnet环境，使用如下命令即可安装使用
-```bash
-dotnet tool install --global BBDown
-```
-
-如果需要更新bbdown，使用如下命令
-```bash
-dotnet tool update --global BBDown
-```
-
-### 环境变量配置 (macOS)
-
-如果使用 Homebrew 安装 .NET，需要设置环境变量：
-```bash
-# 添加到 ~/.zshrc 或 ~/.bash_profile
-export DOTNET_ROOT=/opt/homebrew/opt/dotnet/libexec
-export PATH="$PATH:$HOME/.dotnet/tools"
-```
-
-然后执行 `source ~/.zshrc` 或重新打开终端。
+从源码编译或下载 Release 版本。
 
 # 下载
-Release版本：https://github.com/nilaoda/BBDown/releases
-
-自动构建的测试版本：https://github.com/nilaoda/BBDown/actions
+Release版本：https://github.com/LeviTK/BBDown/releases
 
 # 开始使用
 目前命令行参数支持情况
